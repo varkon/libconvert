@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <schema targetNamespace="http://tempuri.org/t.xsd"
+    xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:t="http://tempuri.org/t.xsd"
+    xmlns:ns="urn:converterservice"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="urn:converterservice"/>
+    <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+    <simpleType name="status"><!-- t__status -->
+      <restriction base="xsd:string">
+        <enumeration value="STATE-OK"/><!-- STATE_OK -->
+<!-- = 0 -->
+        <enumeration value="STATE-FAIL"/><!-- STATE_FAIL -->
+<!-- = 1 -->
+      </restriction>
+    </simpleType>
+    <simpleType name="type"><!-- t__type -->
+      <restriction base="xsd:string">
+        <enumeration value="XML-TYPE"/><!-- XML_TYPE -->
+<!-- = 0 -->
+        <enumeration value="JSON-TYPE"/><!-- JSON_TYPE -->
+<!-- = 1 -->
+      </restriction>
+    </simpleType>
+    <complexType name="input"><!-- t__input -->
+          <sequence>
+            <element name="inputType" type="t:type" minOccurs="1" maxOccurs="1"/><!-- t__input::inputType -->
+            <element name="outputType" type="t:type" minOccurs="1" maxOccurs="1"/><!-- t__input::outputType -->
+            <element name="request" type="xsd:string" minOccurs="0" maxOccurs="1"/><!-- t__input::request -->
+          </sequence>
+    </complexType>
+  </schema>
+

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="clients" displayName="clients" projectFiles="true">
+      <itemPath>src/clients/converterclient.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="converters" displayName="converters" projectFiles="true">
+      <itemPath>src/converters/Json2XmlConverter.cpp</itemPath>
+      <itemPath>src/converters/Json2XmlConverter.h</itemPath>
+      <itemPath>src/converters/Xml2JsonConverter.cpp</itemPath>
+      <itemPath>src/converters/Xml2JsonConverter.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="include" displayName="include" projectFiles="true">
+      <logicalFolder name="rapidjson" displayName="rapidjson" projectFiles="true">
+        <logicalFolder name="error" displayName="error" projectFiles="true">
+          <itemPath>src/include/rapidjson/error/en.h</itemPath>
+          <itemPath>src/include/rapidjson/error/error.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="internal" displayName="internal" projectFiles="true">
+          <itemPath>src/include/rapidjson/internal/biginteger.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/diyfp.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/dtoa.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/ieee754.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/itoa.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/meta.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/pow10.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/regex.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/stack.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/strfunc.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/strtod.h</itemPath>
+          <itemPath>src/include/rapidjson/internal/swap.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="msinttypes" displayName="msinttypes" projectFiles="true">
+          <itemPath>src/include/rapidjson/msinttypes/inttypes.h</itemPath>
+          <itemPath>src/include/rapidjson/msinttypes/stdint.h</itemPath>
+        </logicalFolder>
+        <itemPath>src/include/rapidjson/allocators.h</itemPath>
+        <itemPath>src/include/rapidjson/document.h</itemPath>
+        <itemPath>src/include/rapidjson/encodedstream.h</itemPath>
+        <itemPath>src/include/rapidjson/encodings.h</itemPath>
+        <itemPath>src/include/rapidjson/filereadstream.h</itemPath>
+        <itemPath>src/include/rapidjson/filewritestream.h</itemPath>
+        <itemPath>src/include/rapidjson/fwd.h</itemPath>
+        <itemPath>src/include/rapidjson/istreamwrapper.h</itemPath>
+        <itemPath>src/include/rapidjson/memorybuffer.h</itemPath>
+        <itemPath>src/include/rapidjson/memorystream.h</itemPath>
+        <itemPath>src/include/rapidjson/ostreamwrapper.h</itemPath>
+        <itemPath>src/include/rapidjson/pointer.h</itemPath>
+        <itemPath>src/include/rapidjson/prettywriter.h</itemPath>
+        <itemPath>src/include/rapidjson/rapidjson.h</itemPath>
+        <itemPath>src/include/rapidjson/reader.h</itemPath>
+        <itemPath>src/include/rapidjson/schema.h</itemPath>
+        <itemPath>src/include/rapidjson/stream.h</itemPath>
+        <itemPath>src/include/rapidjson/stringbuffer.h</itemPath>
+        <itemPath>src/include/rapidjson/writer.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="rapidxml" displayName="rapidxml" projectFiles="true">
+        <itemPath>src/include/rapidxml/license.txt</itemPath>
+        <itemPath>src/include/rapidxml/manual.html</itemPath>
+        <itemPath>src/include/rapidxml/rapidxml.hpp</itemPath>
+        <itemPath>src/include/rapidxml/rapidxml_iterators.hpp</itemPath>
+        <itemPath>src/include/rapidxml/rapidxml_print.hpp</itemPath>
+        <itemPath>src/include/rapidxml/rapidxml_utils.hpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="soap" displayName="soap" projectFiles="true">
+        <itemPath>src/include/soap/soapH.h</itemPath>
+        <itemPath>src/include/soap/soapStub.h</itemPath>
+        <itemPath>src/include/soap/stdsoap2.h</itemPath>
+      </logicalFolder>
+      <itemPath>src/include/json2xml.hpp</itemPath>
+      <itemPath>src/include/xml2json.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="interfaces" displayName="interfaces" projectFiles="true">
+      <itemPath>src/interfaces/BuilderConverter.cpp</itemPath>
+      <itemPath>src/interfaces/BuilderConverter.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="services" displayName="services" projectFiles="true">
+      <logicalFolder name="autogenereted"
+                     displayName="autogenereted"
+                     projectFiles="true">
+        <itemPath>src/services/converterservice.MakeConvert.req.xml</itemPath>
+        <itemPath>src/services/converterservice.MakeConvert.res.xml</itemPath>
+        <itemPath>src/services/converterservice.nsmap</itemPath>
+        <itemPath>src/services/converterservice.wsdl</itemPath>
+        <itemPath>src/services/ns.xsd</itemPath>
+        <itemPath>src/services/soapC.cpp</itemPath>
+        <itemPath>src/services/soapH.h</itemPath>
+        <itemPath>src/services/soapStub.h</itemPath>
+        <itemPath>src/services/soapconverterserviceProxy.cpp</itemPath>
+        <itemPath>src/services/soapconverterserviceProxy.h</itemPath>
+        <itemPath>src/services/soapconverterserviceService.cpp</itemPath>
+        <itemPath>src/services/soapconverterserviceService.h</itemPath>
+        <itemPath>src/services/t.xsd</itemPath>
+      </logicalFolder>
+      <itemPath>src/services/ConverterServiceImpl.cpp</itemPath>
+      <itemPath>src/services/ConverterServiceImpl.h</itemPath>
+      <itemPath>src/services/converterservice.h</itemPath>
+      <itemPath>src/services/libconvert.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>json2xml.js</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>include</Elem>
+    <Elem>src/include</Elem>
+    <Elem>src/interfaces</Elem>
+    <Elem>src/readers</Elem>
+    <Elem>src/writers</Elem>
+    <Elem>src/services</Elem>
+    <Elem>src/converters</Elem>
+    <Elem>src/clients</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>src/include</pElem>
+            <pElem>src/interfaces</pElem>
+            <pElem>src/readers</pElem>
+            <pElem>src/services</pElem>
+            <pElem>src/writers</pElem>
+            <pElem>src/include/soap</pElem>
+          </incDir>
+        </ccTool>
+      </compileType>
+      <item path="json2xml.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/clients/converterclient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/converters/Json2XmlConverter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/converters/Json2XmlConverter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/converters/Xml2JsonConverter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/converters/Xml2JsonConverter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/json2xml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/allocators.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/document.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/encodedstream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/encodings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/error/en.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/error/error.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/filereadstream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/filewritestream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/fwd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/biginteger.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/diyfp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/dtoa.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/ieee754.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/itoa.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/meta.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/pow10.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/regex.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/stack.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/strfunc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/strtod.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/swap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/istreamwrapper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/memorybuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/memorystream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/msinttypes/inttypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/msinttypes/stdint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/ostreamwrapper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/pointer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/prettywriter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/rapidjson.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/reader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/schema.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/stringbuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/writer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/license.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/manual.html" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml_iterators.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml_print.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml_utils.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/soap/soapH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/soap/soapStub.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/soap/stdsoap2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/xml2json.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/interfaces/BuilderConverter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/interfaces/BuilderConverter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/ConverterServiceImpl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/services/ConverterServiceImpl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.MakeConvert.req.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.MakeConvert.res.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/converterservice.nsmap"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.wsdl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/libconvert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/services/ns.xsd" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/soapC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/services/soapH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/soapStub.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceProxy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceProxy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceService.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceService.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/t.xsd" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="json2xml.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/clients/converterclient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/converters/Json2XmlConverter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/converters/Json2XmlConverter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/converters/Xml2JsonConverter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/converters/Xml2JsonConverter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/json2xml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/allocators.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/document.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/encodedstream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/encodings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/error/en.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/error/error.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/filereadstream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/filewritestream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/fwd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/biginteger.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/diyfp.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/dtoa.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/ieee754.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/itoa.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/meta.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/pow10.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/regex.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/stack.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/strfunc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/strtod.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/internal/swap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/istreamwrapper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/memorybuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/memorystream.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/msinttypes/inttypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/msinttypes/stdint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/ostreamwrapper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/pointer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/prettywriter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/rapidjson.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/reader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/schema.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/stringbuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidjson/writer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/license.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/manual.html" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml_iterators.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml_print.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/rapidxml/rapidxml_utils.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/include/soap/soapH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/soap/soapStub.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/soap/stdsoap2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/xml2json.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/interfaces/BuilderConverter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/interfaces/BuilderConverter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/ConverterServiceImpl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/services/ConverterServiceImpl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.MakeConvert.req.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.MakeConvert.res.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/converterservice.nsmap"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/converterservice.wsdl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/libconvert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/services/ns.xsd" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/soapC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/services/soapH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/soapStub.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceProxy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceProxy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceService.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/services/soapconverterserviceService.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/services/t.xsd" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

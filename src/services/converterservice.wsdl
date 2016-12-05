@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="converterservice"
+  targetNamespace="urn:converterservice"
+  xmlns:tns="urn:converterservice"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:t="http://tempuri.org/t.xsd"
+  xmlns:ns="urn:converterservice"
+  xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap12/"
+  xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/"
+  xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+  xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+  xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+  xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+  <schema targetNamespace="http://tempuri.org/t.xsd"
+    xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:t="http://tempuri.org/t.xsd"
+    xmlns:ns="urn:converterservice"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="urn:converterservice"/>
+    <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+    <simpleType name="status"><!-- t__status -->
+      <restriction base="xsd:string">
+        <enumeration value="STATE-OK"/><!-- STATE_OK -->
+<!-- = 0 -->
+        <enumeration value="STATE-FAIL"/><!-- STATE_FAIL -->
+<!-- = 1 -->
+      </restriction>
+    </simpleType>
+    <simpleType name="type"><!-- t__type -->
+      <restriction base="xsd:string">
+        <enumeration value="XML-TYPE"/><!-- XML_TYPE -->
+<!-- = 0 -->
+        <enumeration value="JSON-TYPE"/><!-- JSON_TYPE -->
+<!-- = 1 -->
+      </restriction>
+    </simpleType>
+    <complexType name="input"><!-- t__input -->
+          <sequence>
+            <element name="inputType" type="t:type" minOccurs="1" maxOccurs="1"/><!-- t__input::inputType -->
+            <element name="outputType" type="t:type" minOccurs="1" maxOccurs="1"/><!-- t__input::outputType -->
+            <element name="request" type="xsd:string" minOccurs="0" maxOccurs="1"/><!-- t__input::request -->
+          </sequence>
+    </complexType>
+  </schema>
+
+  <schema targetNamespace="urn:converterservice"
+    xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:t="http://tempuri.org/t.xsd"
+    xmlns:ns="urn:converterservice"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  </schema>
+
+</types>
+
+<message name="MakeConvert">
+  <part name="request" type="t:input"/><!-- ns__MakeConvert::request -->
+</message>
+
+<message name="result">
+  <part name="errCode" type="t:status"/><!-- ns__MakeConvert::errCode -->
+  <part name="message" type="xsd:string"/><!-- ns__MakeConvert::message -->
+</message>
+
+<portType name="converterservicePortType">
+  <operation name="MakeConvert">
+    <documentation>Service definition of function ns__MakeConvert</documentation>
+    <input message="tns:MakeConvert"/>
+    <output message="tns:result"/>
+  </operation>
+</portType>
+
+<binding name="converterservice" type="tns:converterservicePortType">
+  <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="MakeConvert">
+    <SOAP:operation style="rpc" soapAction="urn:MakeConvert"/>
+    <input>
+          <SOAP:body use="encoded" namespace="urn:converterservice" encodingStyle="http://www.w3.org/2003/05/soap-encoding"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" namespace="urn:converterservice" encodingStyle="http://www.w3.org/2003/05/soap-encoding"/>
+    </output>
+  </operation>
+</binding>
+
+<service name="converterservice">
+  <documentation>gSOAP 2.8.39 generated service definition</documentation>
+  <port name="converterservice" binding="tns:converterservice">
+    <SOAP:address location="http://localhost:8080"/>
+  </port>
+</service>
+
+</definitions>
